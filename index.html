@@ -15,9 +15,38 @@
   </head>
   <body>
     <div class="container">
-      <header class="header">header</header>
+      <header class="header">
+        <img class="logo" src="./img/logo.png" />
+        <form class="search">
+          <input type="text" class="search__input" />
+          <button class="search__button">
+            <svg class="search__icon">
+              <use xlink:href="/img/sprite.svg#icon-magnifying-glass"></use>
+            </svg>
+          </button>
+        </form>
+        <nav class="user-nav">
+          <div class="user-nav__icon-box">
+            <svg class="user-nav__icon">
+              <use xlink:href="/img/sprite.svg#icon-bookmark"></use>
+            </svg>
+            <span class="user-nav__notification">7</span>
+          </div>
+          <div class="user-nav__icon-box">
+            <svg class="user-nav__icon">
+              <use xlink:href="/img/sprite.svg#icon-chat"></use>
+            </svg>
+            <span class="user-nav__notification">7</span>
+          </div>
+
+          <div class="user-nav__user">
+            <img src="./img/user.jpg" class="user-nav__user-img" />
+            <span class="user-nav__user-name">salma</span>
+          </div>
+        </nav>
+      </header>
       <div class="content">
-        <nav class="sidebar">naviggation</nav>
+        <nav class="sidebar"></nav>
         <main class="hotel-view">content</main>
       </div>
     </div>

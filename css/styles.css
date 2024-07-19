@@ -86,4 +86,26 @@ body {
   background-color: var(--white-color);
 }
 
+.logo {
+  height: 3.25rem;
+}
+
+.search__icon {
+  height: 2rem;
+  width: 2rem;
+}
+
+.user-nav__icon {
+  width: 2.25rem;
+  height: 2.25rem;
+}
+.user-nav__user-img {
+  height: 3.45rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
 /*# sourceMappingURL=styles.css.map */
