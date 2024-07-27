@@ -229,6 +229,71 @@
   }
 }
 
+// description paragraph
+.paragraph {
+  font-size: 1.4rem;
+  font-weight: 600;
+  border-bottom: 1px solid var(--grey-light-2);
+  &__p {
+    margin-bottom: 2rem;
+  }
+}
+
+// description list
+.list {
+  border-bottom: 1px solid var(--grey-light-2);
+  &__items {
+    list-style-type: none;
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 3rem 0rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    flex: 0 0 50%;
+    margin-bottom: 0.7rem;
+  }
+
+  &__icon {
+    width: 1.2rem;
+    height: 1.2rem;
+    fill: var(--primary-color);
+    margin-inline-end: 0.5rem;
+  }
+}
+
+// users
+
+.users {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+  &__text {
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+
+  &__imgs {
+    display: flex;
+  }
+  &__img {
+    margin-right: -5px;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  }
+}
+
 .inline-button {
   border: none;
   color: var(--primary-color);
