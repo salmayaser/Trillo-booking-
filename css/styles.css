@@ -89,7 +89,6 @@ body {
 .hotel-view {
   flex-basis: 80%;
   background-color: var(--white-color);
-  background-color: red;
   height: 800px;
 }
 
@@ -243,11 +242,32 @@ body {
   position: relative;
   z-index: 2;
 }
+
 .legal {
   font-size: 1.2rem;
   text-align: center;
   padding: 1.5rem;
   color: var(--grey-light-2);
+}
+
+.images-container {
+  display: flex;
+}
+.images-container__img {
+  width: 33.3333333333%;
+}
+
+.overview {
+  display: flex;
+  align-items: center;
+}
+.overview__stars {
+  margin-right: auto;
+}
+.overview__icon {
+  width: 1.75rem;
+  height: 1.75rem;
+  fill: var(--primary-color);
 }
 
 /*# sourceMappingURL=styles.css.map */

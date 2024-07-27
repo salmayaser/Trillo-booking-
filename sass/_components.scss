@@ -161,9 +161,6 @@
     position: relative;
     z-index: 2;
   }
-
-  &__text {
-  }
 }
 
 ////////////////// LEGAL /////////////
@@ -172,4 +169,43 @@
   text-align: center;
   padding: 1.5rem;
   color: var(--grey-light-2);
+}
+
+////////////////////images container/////////
+.images-container {
+  display: flex;
+  &__img {
+    width: calc(100% / 3);
+  }
+}
+
+// overview
+
+.overview {
+  display: flex;
+  align-items: center;
+  &__heading {
+  }
+
+  &__stars {
+    margin-right: auto;
+  }
+
+  &__icon {
+    width: 1.75rem;
+    height: 1.75rem;
+    fill: var(--primary-color);
+  }
+
+  &__location {
+  }
+
+  &__rating {
+  }
+
+  &__rating-average {
+  }
+
+  &__raiting-count {
+  }
 }
