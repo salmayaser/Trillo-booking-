@@ -184,7 +184,13 @@
 .overview {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid var(--grey-light-2);
   &__heading {
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 1.5rem 3rem;
   }
 
   &__stars {
@@ -198,14 +204,78 @@
   }
 
   &__location {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
   }
 
   &__rating {
+    background-color: var(--primary-color);
+    margin-left: 3rem;
+    color: #fff;
+    align-self: stretch;
+    padding: 0.5rem 1rem;
+    text-align: center;
   }
 
   &__rating-average {
+    font-size: 2.25rem;
+    font-weight: 300;
   }
 
-  &__raiting-count {
+  &__rating-count {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+  }
+}
+
+.inline-button {
+  border: none;
+  color: var(--primary-color);
+  border-bottom: 1px solid currentColor;
+  font-size: inherit;
+  padding-bottom: 2px;
+  transition: all 1s;
+  display: inline-block;
+  cursor: pointer;
+  background-color: transparent;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  &:hover {
+    color: var(--grey-dark-2);
+  }
+  &:focus {
+    outline: none;
+    animation: scaleUp 1s infinite;
+    -webkit-animation: scaleUp 1s infinite;
+  }
+}
+
+@keyframes scaleUp {
+  0% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    box-shadow: none;
+  }
+
+  50% {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    box-shadow: 0 1rem 4rem rgba($color: #000000, $alpha: 0.5);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    box-shadow: none;
   }
 }
