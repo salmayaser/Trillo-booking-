@@ -52,6 +52,11 @@ html {
     font-size: 50%;
   }
 }
+@media only screen and (max-width: 37.5em) {
+  html {
+    font-size: 40%;
+  }
+}
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -84,6 +89,13 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media only screen and (max-width: 25em) {
+  .header {
+    flex-wrap: wrap;
+    align-content: space-around;
+    height: 12rem;
+  }
 }
 
 .content {
@@ -119,6 +131,12 @@ body {
     padding: 2.5rem;
   }
 }
+@media only screen and (max-width: 37.5em) {
+  .detail {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
 
 .description {
   background-color: var(--white-color);
@@ -130,6 +148,11 @@ body {
 @media only screen and (max-width: 56.25em) {
   .description {
     margin-right: 2.5rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .description {
+    margin-right: 0;
   }
 }
 
@@ -146,6 +169,13 @@ body {
   flex: 0 0 40%;
   display: flex;
   align-items: center;
+}
+@media only screen and (max-width: 25em) {
+  .search {
+    order: 1;
+    flex-basis: 100%;
+    justify-content: center;
+  }
 }
 .search__input {
   width: 90%;
@@ -257,6 +287,11 @@ body {
   margin-right: 2rem;
   fill: currentColor;
 }
+@media only screen and (max-width: 25em) {
+  .side-nav__icon {
+    margin-right: 0;
+  }
+}
 .side-nav__item {
   position: relative;
   margin-bottom: 0.5rem;
@@ -294,6 +329,12 @@ body {
   align-items: center;
   position: relative;
   z-index: 2;
+}
+@media only screen and (max-width: 25em) {
+  .side-nav__link:link, .side-nav__link:visited {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 }
 
 .legal {

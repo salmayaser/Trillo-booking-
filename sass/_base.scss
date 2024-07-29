@@ -35,6 +35,8 @@ Grey dark 3: #999
 $bp_xl: 75em;
 $bp_lg: 68.75em;
 $bp_md: 56.25em;
+$bp_sm: 37.5em;
+$bp_xs: 25em;
 
 * {
   padding: 0;
@@ -53,6 +55,9 @@ html {
 
   @media only screen and (max-width: $bp_lg) {
     font-size: 50%;
+  }
+  @media only screen and (max-width: $bp_sm) {
+    font-size: 40%;
   }
 }
 
