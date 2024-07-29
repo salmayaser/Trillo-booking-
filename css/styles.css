@@ -47,6 +47,11 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
 }
+@media only screen and (max-width: 68.75em) {
+  html {
+    font-size: 50%;
+  }
+}
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -64,6 +69,12 @@ body {
   margin: 8rem auto;
   box-shadow: 0 2rem 6rem var(--shadow-dark);
 }
+@media only screen and (max-width: 75em) {
+  .container {
+    margin: auto;
+    max-width: 100%;
+  }
+}
 
 .header {
   height: 7rem;
@@ -77,6 +88,11 @@ body {
 
 .content {
   display: flex;
+}
+@media only screen and (max-width: 56.25em) {
+  .content {
+    flex-direction: column;
+  }
 }
 
 .sidebar {
@@ -98,6 +114,11 @@ body {
   background-color: var(--grey-light-1);
   border-bottom: 1px solid var(--grey-light-2);
 }
+@media only screen and (max-width: 56.25em) {
+  .detail {
+    padding: 2.5rem;
+  }
+}
 
 .description {
   background-color: var(--white-color);
@@ -105,6 +126,11 @@ body {
   padding: 3rem;
   flex: 0 0 60%;
   margin-right: 4.5rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .description {
+    margin-right: 2.5rem;
+  }
 }
 
 .reviews {
@@ -217,6 +243,14 @@ body {
   list-style-type: none;
   margin-top: 3.5rem;
 }
+@media only screen and (max-width: 56.25em) {
+  .side-nav {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-top: 0;
+  }
+}
 .side-nav__icon {
   width: 1.75rem;
   height: 1.75rem;
@@ -267,6 +301,11 @@ body {
   text-align: center;
   padding: 1.5rem;
   color: var(--grey-light-2);
+}
+@media only screen and (max-width: 56.25em) {
+  .legal {
+    display: none;
+  }
 }
 
 .images-container {
@@ -357,6 +396,13 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 2rem 0;
+}
+@media only screen and (max-width: 56.25em) {
+  .users {
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+  }
 }
 .users__text {
   font-size: 1.2rem;

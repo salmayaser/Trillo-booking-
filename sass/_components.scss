@@ -112,6 +112,13 @@
   font-size: 1.4rem;
   list-style-type: none;
   margin-top: 3.5rem;
+
+  @media only screen and (max-width: $bp_md) {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-top: 0;
+  }
   &__icon {
     width: 1.75rem;
     height: 1.75rem;
@@ -169,6 +176,9 @@
   text-align: center;
   padding: 1.5rem;
   color: var(--grey-light-2);
+  @media only screen and (max-width: $bp_md) {
+    display: none;
+  }
 }
 
 ////////////////////images container/////////
@@ -274,6 +284,12 @@
   justify-content: space-between;
   align-items: center;
   padding: 2rem 0;
+
+  @media only screen and (max-width: $bp_md) {
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+  }
   &__text {
     font-size: 1.2rem;
     font-weight: 300;

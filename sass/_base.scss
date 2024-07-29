@@ -31,6 +31,11 @@ Grey dark 3: #999
   --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
 }
 
+// media queries breakpoints
+$bp_xl: 75em;
+$bp_lg: 68.75em;
+$bp_md: 56.25em;
+
 * {
   padding: 0;
   margin: 0;
@@ -45,6 +50,10 @@ Grey dark 3: #999
 html {
   box-sizing: border-box;
   font-size: 62.5%; //10px/16px
+
+  @media only screen and (max-width: $bp_lg) {
+    font-size: 50%;
+  }
 }
 
 body {

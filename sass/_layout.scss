@@ -4,6 +4,11 @@
   margin: 8rem auto;
 
   box-shadow: 0 2rem 6rem var(--shadow-dark);
+
+  @media only screen and (max-width: $bp_xl) {
+    margin: auto;
+    max-width: 100%;
+  }
 }
 .header {
   height: 7rem;
@@ -16,6 +21,9 @@
 }
 .content {
   display: flex;
+  @media only screen and (max-width: $bp_md) {
+    flex-direction: column;
+  }
 }
 .sidebar {
   flex-basis: 20%;
@@ -35,6 +43,9 @@
   padding: 4.5rem;
   background-color: var(--grey-light-1);
   border-bottom: 1px solid var(--grey-light-2);
+  @media only screen and (max-width: $bp_md) {
+    padding: 2.5rem;
+  }
 }
 
 .description {
@@ -43,6 +54,9 @@
   padding: 3rem;
   flex: 0 0 60%;
   margin-right: 4.5rem;
+  @media only screen and (max-width: $bp_md) {
+    margin-right: 2.5rem;
+  }
 }
 
 .reviews {
