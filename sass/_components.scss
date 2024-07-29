@@ -298,6 +298,72 @@
   }
 }
 
+.review {
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: var(--shadow-light);
+  font-size: 1.4rem;
+  position: relative;
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  &__user-img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-right: 1.5rem;
+  }
+  &__text {
+    position: relative;
+    z-index: 2;
+  }
+  &__description {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  &__user-box {
+    margin-right: auto;
+  }
+  &__username {
+    color: var(--grey-dark-2);
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  &__date {
+    font-weight: 300;
+    font-size: 1.3rem;
+    color: var(--grey-dark-3);
+  }
+  &__rating {
+    font-size: 2rem;
+    color: var(--primary-color);
+  }
+
+  &::before {
+    content: "\201C";
+    position: absolute;
+    font-size: 20rem;
+    color: var(--grey-light-2);
+    top: -2rem;
+    left: -0.5rem;
+    line-height: 1;
+    font-family: sans-serif;
+  }
+}
+
+.show-more {
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .inline-button {
   border: none;
   color: var(--primary-color);
