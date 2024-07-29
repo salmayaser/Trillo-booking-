@@ -531,11 +531,18 @@ body {
   padding: 1.5rem 2.5rem;
   top: -100%;
 }
+.btn:hover {
+  background-image: linear-gradient(to left, var(--primary-color-light), var(--primary-color-dark));
+}
 .btn:hover .btn__hidden {
   top: 0%;
 }
 .btn:hover .btn__visable {
   transform: translateY(100%);
+}
+.btn:focus {
+  outline: none;
+  animation: scaleUp 0.5s infinite;
 }
 
 /*# sourceMappingURL=styles.css.map */

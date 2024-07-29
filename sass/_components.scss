@@ -464,10 +464,23 @@
     top: -100%;
   }
 
+  &:hover {
+    background-image: linear-gradient(
+      to left,
+      var(--primary-color-light),
+      var(--primary-color-dark)
+    );
+  }
+
   &:hover &__hidden {
     top: 0%;
   }
   &:hover &__visable {
     transform: translateY(100%);
+  }
+
+  &:focus {
+    outline: none;
+    animation: scaleUp 0.5s infinite;
   }
 }
