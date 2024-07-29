@@ -443,6 +443,18 @@ body {
   align-items: center;
 }
 
+.cta {
+  background-color: #fff;
+  padding: 4rem 0rem;
+  text-align: center;
+}
+.cta__text {
+  font-size: 1.7rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
 .inline-button {
   border: none;
   color: var(--primary-color);
@@ -490,6 +502,40 @@ body {
     -o-transform: scale(1);
     box-shadow: none;
   }
+}
+.btn {
+  background-image: linear-gradient(to right, var(--primary-color-light), var(--primary-color-dark));
+  border: none;
+  color: #fff;
+  border-radius: 400px;
+  font-size: 1.7rem;
+  position: relative;
+  font-weight: 300;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-border-radius: 400px;
+  -moz-border-radius: 400px;
+  -ms-border-radius: 400px;
+  -o-border-radius: 400px;
+  overflow: hidden;
+}
+.btn__visable, .btn__hidden {
+  display: block;
+  transition: all 0.5s;
+}
+.btn__visable {
+  padding: 1.5rem 7rem;
+}
+.btn__hidden {
+  position: absolute;
+  padding: 1.5rem 2.5rem;
+  top: -100%;
+}
+.btn:hover .btn__hidden {
+  top: 0%;
+}
+.btn:hover .btn__visable {
+  transform: translateY(100%);
 }
 
 /*# sourceMappingURL=styles.css.map */
